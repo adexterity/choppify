@@ -1,6 +1,7 @@
 import { FaRegUser } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 import { TiShoppingCart } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,11 +9,10 @@ const Navbar = () => {
       <h2>Claytown</h2>
       <ul className="md:flex gap-10 text-2xl hidden">
         <li>
-          {" "}
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">Products</a>
+          <Link to="/product">Products</Link>
         </li>
         <li>
           <a href="#">About us</a>
