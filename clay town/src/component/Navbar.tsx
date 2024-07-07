@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="absolute top-1 border border-black flex justify-between  min-w-full px-10 py-5 items-center">
-      <h2>Claytown</h2>
+    <nav className="absolute top-1 left-0 border border-black flex justify-between  min-w-full px-10 py-5 items-center">
+      <h2><img src="/src/assets/images/logo.svg" alt="" /></h2>
       <ul className="md:flex gap-10 text-2xl hidden">
         <li>
           <Link to="/">Home</Link>
@@ -24,7 +24,9 @@ const Navbar = () => {
             <IoSearchSharp />
           </span>
           <span>
-            <TiShoppingCart />
+            <Link to="/cart">
+              <TiShoppingCart />
+            </Link>
           </span>
           <span>
             <FaRegUser />
