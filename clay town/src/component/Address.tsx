@@ -1,7 +1,7 @@
 const Address = () => {
   return (
     <div className="flex gap-2">
-      <div className="bg-white w-[1000px] pt-10 rounded-lg h-[500px]">
+      <div className="bg-white w-[1000px] pt-10 rounded-lg min-h-[500px] ml-3">
         <div className="flex justify-between pl-3 pr-10 ">
           <div className="flex gap-5 bg-red">
             <div>
