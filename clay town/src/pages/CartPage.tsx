@@ -12,11 +12,11 @@ const CartPage = () => {
           <li className="flex justify-between items-center">
             <div className="flex items-center gap-5">
               <div>
-                <img src="src/assets/images/circle.svg" alt="circle" />
+                <img src="/images/circle.svg" alt="circle" />
               </div>
               <div className="flex flex-col items-center gap-3 ">
                 <img
-                  src="src/assets/images/product-image2.png"
+                  src="/images/product-image2.png"
                   className="rounded-md w-28 h-28"
                   alt="product-image"
                 />
@@ -32,20 +32,20 @@ const CartPage = () => {
             <div className="flex flex-col items-center gap-4">
               <p className="text-xl">NGN20,000</p>
               <div>
-                <img src="src/assets/images/addReduce.svg" alt="" />
+                <img src="/images/addReduce.svg" alt="" />
               </div>
             </div>
           </li>
 
-          <hr className="my-6" />
+          <hr className="my-6"/>
           <li className="flex justify-between items-center">
             <div className="flex items-center gap-5">
               <div>
-                <img src="src/assets/images/circle.svg" alt="circle" />
+                <img src="/images/circle.svg" alt="circle" />
               </div>
               <div className="flex flex-col items-center gap-3 ">
                 <img
-                  src="src/assets/images/product-image2.png"
+                  src="/images/product-image2.png"
                   className="rounded-md w-28 h-28"
                   alt="product-image"
                 />
@@ -61,7 +61,7 @@ const CartPage = () => {
             <div className="flex flex-col items-center gap-4">
               <p className="text-xl">NGN20,000</p>
               <div>
-                <img src="src/assets/images/addReduce.svg" alt="" />
+                <img src="/images/addReduce.svg" alt="" />
               </div>
             </div>
           </li>
@@ -70,11 +70,11 @@ const CartPage = () => {
           <li className="flex justify-between items-center">
             <div className="flex items-center gap-5">
               <div>
-                <img src="src/assets/images/circle.svg" alt="circle" />
+                <img src="/images/circle.svg" alt="circle" />
               </div>
               <div className="flex flex-col items-center gap-3 ">
                 <img
-                  src="src/assets/images/product-image2.png"
+                  src="/images/product-image2.png"
                   className="rounded-md w-28 h-28"
                   alt="product-image"
                 />
@@ -90,7 +90,7 @@ const CartPage = () => {
             <div className="flex flex-col items-center gap-4">
               <p className="text-xl">NGN20,000</p>
               <div>
-                <img src="src/assets/images/addReduce.svg" alt="" />
+                <img src="/images/addReduce.svg" alt="" />
               </div>
             </div>
           </li>

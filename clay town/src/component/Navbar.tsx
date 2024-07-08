@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="absolute top-1 left-0  flex justify-between  min-w-full px-10 py-5 items-center">
-      <h2><img src="/src/assets/images/logo.svg" alt="logo" /></h2>
+      <h2>
+        <img src="/images/Logo.svg" alt="logo" />
+      </h2>
       <ul className="md:flex gap-10 text-2xl hidden">
         <li>
           <Link to="/">Home</Link>

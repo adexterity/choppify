@@ -38,12 +38,12 @@ const HomePage = () => {
                 handmade clay and wooden products from around the world
               </p>
               <div className="absolute top-[50px] right-[-150px]">
-                <img src="../src/assets/images/about-us2.png" alt="image1" />
+                <img src="../images/about-us2.png" alt="image1" />
               </div>
-              <img src="../src/assets/images/about-us1.png " alt="image2" />
+              <img src="../images/about-us1.png " alt="image2" />
 
               <div className="absolute bottom-[-70px] -left-[150px]">
-                <img src="../src/assets/images/about-us3.png " alt="image3" />
+                <img src="../images/about-us3.png " alt="image3" />
               </div>
               <div className="border border-black p-3  absolute -right-[330px] -bottom-1 flex justify-center flex-col text-center items-center">
                 <p className="lg:w-[273px] mb-5 lg:absolute md:-left-[300px] ">
@@ -237,10 +237,7 @@ const HomePage = () => {
         <ul className="flex justify-around mb-20 flex-wrap">
           <li className="p-2 border border-black rounded">
             <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div
-                className="flex justify-between p-1"
-               
-              >
+              <div className="flex justify-between p-1">
                 <span>
                   <CiHeart />
                 </span>

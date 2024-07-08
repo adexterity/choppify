@@ -5,7 +5,7 @@ const Address = () => {
         <div className="flex justify-between pl-3 pr-10 ">
           <div className="flex gap-5 bg-red">
             <div>
-              <img src="/src/assets/images/radio_selected.svg" alt="radio" />
+              <img src="/images/radio_selected.svg" alt="radio" />
             </div>
             <div>
               <p>
@@ -14,7 +14,7 @@ const Address = () => {
               </p>
             </div>
             <div>
-              <img src="/src/assets/images/tag.svg" alt="radio" />
+              <img src="/images/tag.svg" alt="radio" />
             </div>
           </div>
           <div className="flex gap-3">
@@ -26,7 +26,7 @@ const Address = () => {
         <div className="flex justify-between pl-3 pr-10 mt-10">
           <div className="flex gap-5">
             <div>
-              <img src="/src/assets/images/radio_off.svg" alt="radio" />
+              <img src="/images/radio_off.svg" alt="radio" />
             </div>
             <div>
               <p>
@@ -35,7 +35,7 @@ const Address = () => {
               </p>
             </div>
             <div>
-              <img src="/src/assets/images/tag2.svg" alt="radio" />
+              <img src="/images/tag2.svg" alt="radio" />
             </div>
           </div>
           <div className="flex gap-3">
@@ -79,7 +79,7 @@ const Address = () => {
         <div className="flex my-4 justify-between border p-2">
           <span>coupon code</span>
           <span>
-            <img src="../src/assets/images/Trailing-Icon.svg" alt="icon" />
+            <img src="../images/Trailing-Icon.svg" alt="icon" />
           </span>
         </div>
         <div className="m-auto flex justify-center ">

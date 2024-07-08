@@ -1,12 +1,7 @@
 const Shipping = () => {
   return (
     <div className="flex gap-2">
-      <div className="bg-white w-[1000px] pt-10 rounded-lg h-[500px]">
-
-
-
-        
-      </div>
+      <div className="bg-white w-[1000px] pt-10 rounded-lg h-[500px]"></div>
       <div className="  bg-white w-[300px] p-3 rounded-lg h-[480px]">
         <h2 className="font-semibold text-2xl pb-5">Order Summary</h2>
         <div className="flex my-4 justify-between">
@@ -37,7 +32,7 @@ const Shipping = () => {
         <div className="flex my-4 justify-between border p-2">
           <span>coupon code</span>
           <span>
-            <img src="../src/assets/images/Trailing-Icon.svg" alt="icon" />
+            <img src="../images/Trailing-Icon.svg" alt="icon" />
           </span>
         </div>
         <div className="m-auto flex justify-center ">

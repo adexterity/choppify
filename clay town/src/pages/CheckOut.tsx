@@ -10,20 +10,19 @@ const CheckOut = () => {
           <NavLink to="address">
             <p className="text-2xl">Address</p>
           </NavLink>
-          <img src="/src/assets/images/chevron-right.svg" alt="icon" />
+          <img src="/images/chevron-right.svg" alt="icon" />
 
           <NavLink to="shipping">
             <p className="text-[#00000091] text-2xl">Shipping</p>
           </NavLink>
-          <img src="/src/assets/images/chevron-right.svg" alt="icon" />
+          <img src="/images/chevron-right.svg" alt="icon" />
 
           <NavLink to="payment">
             <p className="text-2xl text-[#00000091]">Payment</p>
           </NavLink>
         </div>
-          <Outlet />
-        </div>
-        
+        <Outlet />
+      </div>
     </section>
   );
 };
