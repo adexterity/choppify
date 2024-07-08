@@ -1,6 +1,5 @@
-import { useState } from "react";
 import Navbar from "../component/Navbar";
-import { IoCartOutline, IoHeartSharp } from "react-icons/io5";
+import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import Footer from "../component/Footer";
 
