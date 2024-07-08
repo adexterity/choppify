@@ -7,8 +7,6 @@ import Footer from "../component/Footer";
 const HomePage = () => {
   const [isFav, setIsFav] = useState(false);
 
-
-
   return (
     <>
       {/*      header section
@@ -31,7 +29,9 @@ const HomePage = () => {
       </header>
       {/* about us */}
       <section className="bg-[#DED5BC] py-5 ">
-        <h2 className="text-center text-2xl md:text-[66px] py-10 md:py-20 font-semibold">About us</h2>
+        <h2 className="text-center text-2xl md:text-[66px] py-10 md:py-20 font-semibold">
+          About us
+        </h2>
         <div className="relative">
           <div className="flex justify-center items-center">
             <div className="relative border border-black md:first:w-[400px]">
@@ -71,21 +71,17 @@ const HomePage = () => {
         </h2>
 
         <ul className="flex justify-around mb-20 flex-wrap">
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 bg-white rounded shadow-2xl">
             <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div
-                className={`flex justify-between p-1`}
-                onClick={()=>{
-                  setIsFav(!isFav);
-                }}
-              >
-                <span>{isFav ? <IoHeartSharp className="text-red-600" /> : <CiHeart />}</span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+              <div className={`flex justify-between p-1`}>
+                <span>
+                  
+                </span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
+            <div className="flex justify-between pt-4">
+              <div>
               <p className="font-medium text-xl  ">Still life pottery</p>
               <p>NGN 15,000</p>
               <div className="py-3">
@@ -98,15 +94,26 @@ const HomePage = () => {
               <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
                 Add to cart
               </button>
+              </div>
+              <div>
+              {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}
+              </div>
+              
             </div>
           </li>
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 border border-[#00000088] rounded">
             <div className="bg-product2-bg bg-no-repeat bg-bottom bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
                   {isFav ? (
                     <IoHeartSharp className="text-red-600" />
                   ) : (
@@ -136,10 +143,18 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>{isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />} </span>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
+                </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
                 </p>
@@ -165,10 +180,18 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product4-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>{isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />} </span>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
+                </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
                 </p>
@@ -192,10 +215,18 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product5-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>{isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />} </span>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
+                </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
                 </p>
@@ -219,10 +250,18 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product6-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>{isFav ? <IoHeartSharp className="text-red-600" /> : <CiHeart />} </span>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
+                </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
                 </p>
@@ -257,10 +296,18 @@ const HomePage = () => {
                 className="flex justify-between p-1"
                 onClick={() => setIsFav(!isFav)}
               >
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>{isFav ? <IoHeartSharp className="text-red-600" /> : <CiHeart />} </span>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
+                </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
                 </p>
@@ -285,7 +332,11 @@ const HomePage = () => {
             <div className="bg-product2-bg bg-no-repeat bg-bottom bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
                 <span onClick={() => setIsFav(!isFav)}>
-                  {isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />}{" "}
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
                 </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
@@ -311,11 +362,13 @@ const HomePage = () => {
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
                 <span onClick={() => setIsFav(!isFav)}>
-                  {isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />}{" "}
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
                 </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+                <p className="bg-white rounded-full p-2">Best seller</p>
               </div>
             </div>
             <div>
@@ -338,12 +391,18 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>
-                  {isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />}{" "}
-                  </span>
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
+                </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
                 </p>
@@ -367,11 +426,17 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product2-bg bg-no-repeat bg-bottom bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>
-                {isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />}{" "}
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
                 </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
@@ -396,11 +461,17 @@ const HomePage = () => {
           <li className="p-2 border border-black rounded">
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
-                <span onClick={() => {
-                  setIsFav(!isFav);
-                  console.log(isFav);
-                }}>
-                {isFav ? <IoHeartSharp className="text-red-600"/> : <CiHeart />}{" "}
+                <span
+                  onClick={() => {
+                    setIsFav(!isFav);
+                    console.log(isFav);
+                  }}
+                >
+                  {isFav ? (
+                    <IoHeartSharp className="text-red-600" />
+                  ) : (
+                    <CiHeart />
+                  )}{" "}
                 </span>
                 <p className="border border-black rounded-full p-2">
                   Best seller
@@ -438,7 +509,6 @@ const HomePage = () => {
 
       {/* footer */}
       <Footer />
-     
     </>
   );
 };

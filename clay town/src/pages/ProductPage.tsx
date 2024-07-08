@@ -497,6 +497,8 @@ const ProductPage = () => {
             </div>
           </li>
         </ul>
+
+       <div className="flex justify-center pb-40"><img src="/src/assets/images/pagination.svg" alt="pagination" /></div>
       </section>
       <Footer />
     </>

@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
+import CheckOut from "./pages/CheckOut";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="product" element={<ProductPage />} />
           <Route path="cart" element={<CartPage />} />
+          <Route path="checkout" element={<CheckOut />} />
         </Routes>
       </BrowserRouter>
       {/* 
