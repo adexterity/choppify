@@ -49,38 +49,47 @@ const Address = () => {
           <span className="text-2xl mr-3">+</span> <span>Add New Address</span>
         </div>
       </div>
-      <div className="  bg-white w-[300px] p-3 rounded-lg h-[400px]">
-        <h2>Order Summary</h2>
-        <div>
+      <div className="  bg-white w-[300px] p-3 rounded-lg h-[480px]">
+        <h2 className="font-semibold text-2xl pb-5">Order Summary</h2>
+        <div className="flex my-4 justify-between">
           <span>Price</span>
           <span>NGN61,600</span>
         </div>
-        <div>
+        <div className="flex my-4 justify-between">
           <span>Discount</span>
-          <span>NGN61,600</span>
+          <span>0</span>
         </div>
-        <div>
+        <div className="flex my-4 justify-between">
           <span>Shipping</span>
-          <span>NGN61,600</span>
+          <span>NGN700</span>
         </div>
-        <div>
+        <div className="flex my-4 justify-between">
           <span>Coupon Applied</span>
-          <span>NGN61,600</span>
+          <span>0</span>
         </div>
         <hr />
-        <div>
+        <div className="flex my-4 justify-between">
           <span>TOTAL</span>
-          <span>TOTAL</span>
+          <span>NGN62,300</span>
         </div>
-        <div>
+        <div className="flex my-4 justify-between">
           <span>Estimated Delivery by</span>
-          <span>TOTAL</span>
+          <span>01 Sep, 2024</span>
         </div>
-        <div>
+        <div className="flex my-4 justify-between border p-2">
           <span>coupon code</span>
-          <span>TOTAL</span>
+          <span>
+            <img src="../src/assets/images/Trailing-Icon.svg" alt="icon" />
+          </span>
         </div>
-        <button>Continue to Shipping</button>
+        <div className="m-auto flex justify-center ">
+          <button
+            className="my-4 bg-[#DFAE72] rounded-full 
+         py-2 px-6  text-white"
+          >
+            Continue to Shipping
+          </button>
+        </div>
       </div>
     </div>
   );
