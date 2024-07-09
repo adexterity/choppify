@@ -1,8 +1,14 @@
 import { FaRegTrashAlt } from "react-icons/fa";
 import Navbar from "../component/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CartPage = () => {
+  const navigate = useNavigate();
+
+  const handleHome = () => {
+    navigate("/");
+  };
+
   return (
     <section className="bg-[#DED5BC] min-h-screen pt-32 pb-24  px-4 md:px-10 relative">
       <Navbar />
@@ -121,7 +127,9 @@ const CartPage = () => {
             <td className="py-2 px-5 font-semibold hidden md:inline">
               Item Name
             </td>
-            <td className="py-2 px-5 font-semibold hidden md:inline">Quality</td>
+            <td className="py-2 px-5 font-semibold hidden md:inline">
+              Quality
+            </td>
             <td className="py-2 px-5 font-semibold text-center">Cost</td>
           </thead>
           <tr>
@@ -170,6 +178,7 @@ const CartPage = () => {
       <button
         className="text-[#FF7810] absolute bottom-4 right-4
 "
+        onClick={handleHome}
       >
         Back to home
       </button>
