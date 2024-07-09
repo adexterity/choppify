@@ -29,14 +29,14 @@ const HomePage = () => {
         <h2 className="text-center text-2xl md:text-[66px] py-10 md:py-20 font-semibold">
           About us
         </h2>
-        <div className="relative">
+        <div className="relative font-semi-bold">
           <div className="flex flex-col justify-center items-center">
-            <p className=" text-center border border-black p-3 ">
+            <p className=" text-center border border-black p-3 max-w-[700px] text-xl">
               Claytown is where tradition meets modern craftsmanship. We are
               passionate artisans dedicated to bringing you the finest handmade
               clay and wooden products from around the world
             </p>
-            <div className="relative border border-black md:first:w-[400px]">
+            <div className="relative  md:w-[400px]">
               <div className="absolute top-[50px] right-[-150px]">
                 <img src="../images/about-us2.png" alt="image1" />
               </div>
@@ -46,13 +46,13 @@ const HomePage = () => {
                 <img src="../images/about-us3.png " alt="image3" />
               </div>
             </div>
-            <div className="border border-black p-3  absolute -right-[330px] -bottom-1 flex justify-center flex-col text-center items-center ">
-              <p className=" mb-5 ">
+            <div className=" p-3  flex justify-center flex-col text-center items-center mt-24">
+              <p className=" mb-5 max-w-[700px] text-xl">
                 Our curated collection celebrates the artistry and cultural
                 heritage of skilled craftsmen, ensuring every piece tells a
                 unique story.
               </p>
-              <button className="bg-[#D8A873] p-3 rounded-full border border-[#1c1c1c48]">
+              <button className="bg-[#D8A873] py-3 px-5 rounded-full border border-[#1c1c1c48]">
                 Read more
               </button>
             </div>
