@@ -1,6 +1,17 @@
 import { CiHeart } from "react-icons/ci"
 
-const ItemCard = ({item}) => {
+
+interface Item {
+    image: string;
+    // Add other properties here as needed
+  }
+  
+  interface ItemCardProps {
+    item: Item;
+  }
+
+
+const ItemCard = ({item}:ItemCardProps) => {
   return (
 <li className="p-2 bg-white rounded shadow-2xl" >
           <div

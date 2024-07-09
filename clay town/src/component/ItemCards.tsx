@@ -1,7 +1,12 @@
 import ItemCard from "./ItemCard";
 
+
+interface Item {
+  image: string;
+}
+
 const ItemCards = () => {
-  const items = [
+  const items:Item[] = [
     {
       image: "bg-product1-bg",
     },

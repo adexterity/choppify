@@ -1,4 +1,3 @@
-import { IoHeartSharp } from "react-icons/io5";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import { CiHeart } from "react-icons/ci";
