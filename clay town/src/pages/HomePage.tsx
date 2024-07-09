@@ -31,7 +31,7 @@ const HomePage = () => {
         </h2>
         <div className="relative font-semi-bold">
           <div className="flex flex-col justify-center items-center">
-            <p className=" text-center border border-black p-3 max-w-[700px] text-xl">
+            <p className=" text-centerp-3 max-w-[700px] text-xl">
               Claytown is where tradition meets modern craftsmanship. We are
               passionate artisans dedicated to bringing you the finest handmade
               clay and wooden products from around the world
