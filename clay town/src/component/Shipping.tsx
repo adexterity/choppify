@@ -1,9 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-
-
 const Shipping = () => {
-
   const navigate = useNavigate();
 
   const handleProceedToPayment = () => {
@@ -14,13 +11,13 @@ const Shipping = () => {
   };
   return (
     <div className="flex gap-2 justify-center flex-wrap px-2">
-      <div className="bg-white w-[1000px] pt-10 rounded-lg min-h-[500px] pl-4 mb-5 ml-3">
-        <form className="w-[500px] px-2 ">
+      <div className="bg-white max-w-[1000px] pt-10 rounded-lg min-h-[500px] pl-4 mb-5 ">
+        <form className="max-w-[1000px] px-2">
           <h1 className="font-semibold text-2xl my-4">Shipping Details</h1>
           <div className="flex justify-between items-center">
-            <p>use saved address</p>
-            <p className="rounded-full bg-[#FCF2E1] p-3 flex gap-5">
-              <span>123, Allen Avenue</span>
+            <p className="md:text-black text-orange-400 md:text-base text-sm">use saved address</p>
+            <p className="rounded-full bg-[#FCF2E1] p-3 flex gap-2 md:gap-5">
+              <span className=" text-xs md:text-base">123, Allen Avenue</span>
               <span className="ml-2">
                 <img src="/images/arrow-down-s-fill.svg" alt="dropdown" />
               </span>
@@ -43,14 +40,14 @@ const Shipping = () => {
           <div className="flex justify-between">
             <div>
               <h3 className="py-2 text-[#00000075]">Postcode</h3>
-              <p className="py-3 pl-5 pr-20 bg-[#FCF2E1]  rounded-full">
+              <p className="py-3 pl-5 pr-10 md:pr-20 bg-[#FCF2E1]  rounded-full  text-xs md:text-base">
                 ABC-123
               </p>
             </div>
             <div>
-              <h3 className="py-2 text-[#00000075]"> Select shipping</h3>
-              <p className="py-3 px-5 bg-[#FCF2E1]  rounded-full flex items-center justify-between gap-20">
-                <span>Free delivery</span>{" "}
+              <h3 className="py-2 text-[#00000075]  "> Select shipping</h3>
+              <p className="py-3 px-5 bg-[#FCF2E1]  text-xs md:text-base rounded-full flex items-center justify-between gap-2 md:gap-20">
+                <span>Free delivery</span>
                 <span>
                   <img src="/images/arrow-down-s-fill.svg" alt="dropdown" />
                 </span>
@@ -59,14 +56,15 @@ const Shipping = () => {
           </div>
           <hr className="my-8 w-[90%] m-auto" />
         </form>
-        <div className="flex gap-7 justify-center mb-10">
+        <div className="flex  gap-3 md:gap-7 justify-center mb-10">
           <button onClick={handleHome}>Cancel order</button>
 
-         
-            <button  onClick={handleProceedToPayment} className=" bg-[#DFAE72] py-2 px-10 rounded-full text-white">
-              Payment
-            </button>
-      
+          <button
+            onClick={handleProceedToPayment}
+            className=" bg-[#DFAE72] py-2 px-10 rounded-full text-white"
+          >
+            Payment
+          </button>
         </div>
       </div>
       <div className="  bg-white w-[300px] p-3 rounded-lg h-[480px]">
@@ -103,7 +101,8 @@ const Shipping = () => {
           </span>
         </div>
         <div className="m-auto flex justify-center ">
-          <button onClick={handleProceedToPayment}
+          <button
+            onClick={handleProceedToPayment}
             className="my-4 bg-[#DFAE72] rounded-full 
          py-2 px-6  text-white"
           >

@@ -2,8 +2,15 @@ import Navbar from "../component/Navbar";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import Footer from "../component/Footer";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const handleProceedToProduct = () => {
+    navigate("/product");
+  };
+
   return (
     <>
       {/*      header section
@@ -19,7 +26,7 @@ const HomePage = () => {
             Discover handmade clay home decor items crafted by the finest
             artisans from around the world
           </h3>
-          <button className="bg-[#C4C0BD] p-3 rounded-full text-black">
+          <button className="bg-[#C4C0BD] p-3 rounded-full text-black " onClick={handleProceedToProduct}>
             Shop now <IoCartOutline className="inline" />
           </button>
         </div>

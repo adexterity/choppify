@@ -17,7 +17,7 @@ const Payment = () => {
             <span>Expires 06/2021</span>
           </div>
 
-          <button className=" text-[#E14B4B]">Remove</button>
+          <button className=" text-[#E14B4B] hidden md:block">Remove</button>
         </li>
         <li className="flex  border-2 p-3 justify-between">
           <div className="flex gap-3">
@@ -31,7 +31,7 @@ const Payment = () => {
             <span>Expires 11/2025</span>
           </div>
 
-          <button className=" text-[#E14B4B]">Remove</button>
+          <button className=" text-[#E14B4B]  hidden md:block">Remove</button>
         </li>
 
         <hr className="my-10" />
