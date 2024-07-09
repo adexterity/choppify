@@ -7,7 +7,7 @@ const Address = () => {
     navigate("/checkout/shipping");
   };
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 justify-center flex-wrap px-2">
       <div className="bg-white w-[1000px] pt-10 rounded-lg min-h-[500px] ml-3">
         <div className="flex justify-between pl-3 pr-10 ">
           <div className="flex gap-5 bg-red">
@@ -16,15 +16,15 @@ const Address = () => {
             </div>
             <div>
               <p>
-                <span className="font-semibold text-2xl">Lagos Nigeria </span>
-                <br /> <br /> Ojuelegba <br /> <br /> Contact- (936) 361-0310
+                <span className="font-semibold text-xl md:text-2xl">Lagos Nigeria </span>
+                <br /> <br /> Ojuelegba <br /> <br className="hidden md:block" /> Contact- (936) 361-0310
               </p>
             </div>
             <div>
               <img src="/images/tag.svg" alt="radio" />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="md:flex gap-3 hidden">
             <p className="text-[#00000091]">Edit</p>
             <span>|</span>
             <p className="text-red-600">Remove</p>
@@ -37,15 +37,15 @@ const Address = () => {
             </div>
             <div>
               <p>
-                <span className="font-semibold text-2xl">Lagos Nigeria </span>
-                <br /> <br /> Akoka <br /> <br /> Contact- (936) 361-0310
+                <span className="font-semibold  text-xl md:text-2xl">Lagos Nigeria </span>
+                <br /> <br /> Akoka <br /> <br className="hidden md:block"/> Contact- (936) 361-0310
               </p>
             </div>
             <div>
               <img src="/images/tag2.svg" alt="radio" />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="md:flex gap-3 hidden">
             <p className="text-[#00000091]">Edit</p>
             <span>|</span>
             <p className="text-red-600">Remove</p>

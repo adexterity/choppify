@@ -13,7 +13,7 @@ const Shipping = () => {
     navigate("/");
   };
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 justify-center flex-wrap px-2">
       <div className="bg-white w-[1000px] pt-10 rounded-lg min-h-[500px] pl-4 mb-5 ml-3">
         <form className="w-[500px] px-2 ">
           <h1 className="font-semibold text-2xl my-4">Shipping Details</h1>

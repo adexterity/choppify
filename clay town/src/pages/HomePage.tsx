@@ -36,13 +36,17 @@ const HomePage = () => {
               passionate artisans dedicated to bringing you the finest handmade
               clay and wooden products from around the world
             </p>
-            <div className="relative  md:w-[400px]">
-              <div className="absolute top-[50px] right-[-150px]">
+            <div className="relative md:w-[400px]">
+              <div className="absolute top-[50px] right-[-20px] md:right-[-150px] w-[100px] md:w-[200px]">
                 <img src="../images/about-us2.png" alt="image1" />
               </div>
-              <img src="../images/about-us1.png " alt="image2" />
+              <img
+                src="../images/about-us1.png "
+                alt="image2"
+                className="w-[250px] md:w-[400px]"
+              />
 
-              <div className="absolute bottom-[-70px] -left-[150px]">
+              <div className="absolute bottom-[-40px] -left-[20px] md:-left-[150px] w-[100px] md:w-[200px]">
                 <img src="../images/about-us3.png " alt="image3" />
               </div>
             </div>
