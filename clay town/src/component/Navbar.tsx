@@ -3,10 +3,9 @@ import { FaRegUser } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { IoMenu, IoSearchSharp } from "react-icons/io5";
 import { TiShoppingCart } from "react-icons/ti";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const [showNavLinks, setshowNavLinks] = useState(false);
   const toggleNavbar = () => setshowNavLinks(!showNavLinks);
   const handleNavigate = () => {
@@ -26,7 +25,7 @@ const Navbar = () => {
         {showNavLinks ? <IoMdClose size={30} /> : <IoMenu size={30} />}
       </div>
       <h2>
-        <img src="/images/Logo.svg" alt="logo" className=" w-24 md:w-40"/>
+        <img src="/images/Logo.svg" alt="logo" className=" w-24 md:w-40" />
       </h2>
 
       <ul
