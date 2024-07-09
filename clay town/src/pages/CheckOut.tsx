@@ -3,10 +3,10 @@ import Navbar from "../component/Navbar";
 
 const CheckOut = () => {
   return (
-    <section className="bg-[#F7F0DD] min-h-screen pt-32">
+    <section className="bg-[#F7F0DD] min-h-screen pt-32 pb-10">
       <Navbar />
       <div>
-        <div className="flex gap-3 items-center pl-10 mb-5">
+        <div className="flex md:gap-3 items-center pl-10 mb-5">
           <NavLink to="address">
             <p className="text-2xl">Address</p>
           </NavLink>

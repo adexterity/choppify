@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 const Address = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/checkout/shipping");
+  };
   return (
     <div className="flex gap-2">
       <div className="bg-white w-[1000px] pt-10 rounded-lg min-h-[500px] ml-3">
@@ -84,6 +91,7 @@ const Address = () => {
         </div>
         <div className="m-auto flex justify-center ">
           <button
+            onClick={handleNavigate}
             className="my-4 bg-[#DFAE72] rounded-full 
          py-2 px-6  text-white"
           >

@@ -9,6 +9,9 @@ const Shipping = () => {
   const handleProceedToPayment = () => {
     navigate("/checkout/payment");
   };
+  const handleHome = () => {
+    navigate("/");
+  };
   return (
     <div className="flex gap-2">
       <div className="bg-white w-[1000px] pt-10 rounded-lg min-h-[500px] pl-4 mb-5 ml-3">
@@ -57,7 +60,7 @@ const Shipping = () => {
           <hr className="my-8 w-[90%] m-auto" />
         </form>
         <div className="flex gap-7 justify-center mb-10">
-          <button>Cancel order</button>
+          <button onClick={handleHome}>Cancel order</button>
 
          
             <button  onClick={handleProceedToPayment} className=" bg-[#DFAE72] py-2 px-10 rounded-full text-white">
@@ -100,11 +103,11 @@ const Shipping = () => {
           </span>
         </div>
         <div className="m-auto flex justify-center ">
-          <button
+          <button onClick={handleProceedToPayment}
             className="my-4 bg-[#DFAE72] rounded-full 
          py-2 px-6  text-white"
           >
-            Continue to Shipping
+            Continue to Payment
           </button>
         </div>
       </div>

@@ -8,14 +8,14 @@ const HomePage = () => {
     <>
       {/*      header section
        */}
-      <header className="bg-header-bg bg-cover bg-bottom flex justify-center items-center text-white min-h-screen ">
+      <header className="bg-header-bg bg-cover bg-bottom flex justify-center items-center text-white min-h-screen">
         <Navbar />
 
         <div className=" flex justify-center items-center flex-col">
-          <h1 className="text-5xl text-center leading-[1.5]">
+          <h1 className="text-2xl md:text-5xl text-center leading-[1] md:leading-[1.5] font-custom">
             Stylish, functional pottery for <br /> modern living
           </h1>
-          <h3 className="my-10 w-96 text-xl text-center">
+          <h3 className="my-10 p-3 max-w-96 text-xl text-center">
             Discover handmade clay home decor items crafted by the finest
             artisans from around the world
           </h3>
@@ -30,13 +30,13 @@ const HomePage = () => {
           About us
         </h2>
         <div className="relative">
-          <div className="flex justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
+            <p className=" text-center border border-black p-3 ">
+              Claytown is where tradition meets modern craftsmanship. We are
+              passionate artisans dedicated to bringing you the finest handmade
+              clay and wooden products from around the world
+            </p>
             <div className="relative border border-black md:first:w-[400px]">
-              <p className="lg:w-[273px] text-center border border-black p-3 lg:absolute md:-left-[300px]  ">
-                Claytown is where tradition meets modern craftsmanship. We are
-                passionate artisans dedicated to bringing you the finest
-                handmade clay and wooden products from around the world
-              </p>
               <div className="absolute top-[50px] right-[-150px]">
                 <img src="../images/about-us2.png" alt="image1" />
               </div>
@@ -45,16 +45,16 @@ const HomePage = () => {
               <div className="absolute bottom-[-70px] -left-[150px]">
                 <img src="../images/about-us3.png " alt="image3" />
               </div>
-              <div className="border border-black p-3  absolute -right-[330px] -bottom-1 flex justify-center flex-col text-center items-center">
-                <p className="lg:w-[273px] mb-5 lg:absolute md:-left-[300px] ">
-                  Our curated collection celebrates the artistry and cultural
-                  heritage of skilled craftsmen, ensuring every piece tells a
-                  unique story.
-                </p>
-                <button className="bg-[#D8A873] p-3 rounded-full border border-[#1c1c1c48]">
-                  Read more
-                </button>
-              </div>
+            </div>
+            <div className="border border-black p-3  absolute -right-[330px] -bottom-1 flex justify-center flex-col text-center items-center ">
+              <p className=" mb-5 ">
+                Our curated collection celebrates the artistry and cultural
+                heritage of skilled craftsmen, ensuring every piece tells a
+                unique story.
+              </p>
+              <button className="bg-[#D8A873] p-3 rounded-full border border-[#1c1c1c48]">
+                Read more
+              </button>
             </div>
           </div>
         </div>
@@ -148,6 +148,7 @@ const HomePage = () => {
             </div>
           </li>
         </ul>
+
         <ul className="flex justify-around flex-wrap">
           <li className="p-2 border border-black rounded">
             <div className="bg-product4-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
@@ -231,7 +232,7 @@ const HomePage = () => {
       </section>
       {/* our product section */}
       <section className="bg-[#DED5BC] py-3 min-h-screen">
-        <h2 className="text-center text-2xl md:text-[66px] py-[120px] font-semibold">
+        <h2 className="text-center text-2xl md:text-[66px] py-[60px] md:py-[120px] font-semibold">
           Our Products
         </h2>
         <ul className="flex justify-around mb-20 flex-wrap">
@@ -312,7 +313,7 @@ const HomePage = () => {
             </div>
           </li>
         </ul>
-        <ul className="flex justify-around mb-20 flex-wrap">
+        <ul className="flex justify-around  mb-10 md:mb-20 flex-wrap">
           <li className="p-2 border border-black rounded">
             <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className="flex justify-between p-1">
@@ -392,15 +393,23 @@ const HomePage = () => {
             </div>
           </li>
         </ul>
-        <p className="text-[#FF7810] text-right pr-4 text-5xl pb-9">see more</p>
+        <p className="text-[#FF7810] text-right pr-4 text-3xl md:text-5xl pb-5 md:pb-9">
+          see more
+        </p>
       </section>
 
       {/* subscription section */}
       <section className="bg-subscribe-bg bg-bottom bg-cover text-white flex justify-center items-center flex-col py-4">
-        <h2 className="text-2xl md:text-[65px]">Subscribe to our newsletter</h2>
-        <p>Be the first to know about our latest arrivals, exclusive offers</p>
-        <p>Join us now and get 10% discount off your first purchase</p>
-        <button className="rounded-full bg-[#fbc47cbb] px-4 py-2 text-2xl my-10 text-black">
+        <h2 className="text-2xl md:text-[65px] text-center my-10">
+          Subscribe to our newsletter
+        </h2>
+        <p className="text-center text-xl">
+          Be the first to know about our latest arrivals, exclusive offers
+        </p>
+        <p className="text-center w-96 text-2xl">
+          Join us now and get 10% discount off your first purchase
+        </p>
+        <button className="rounded-full bg-[#fbc47cbb] px-4 py-2 text-2xl my-10 text-black border border-[#202020]">
           Subscribe
         </button>
       </section>

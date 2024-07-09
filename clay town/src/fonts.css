@@ -1,0 +1,10 @@
+/* src/fonts.css */
+@font-face {
+    font-family: 'futura';
+    src: url('./assets/fonts/futura/Futura\ Bold.ttf') format('ttf'),
+         url('./assets/fonts/futura/Futura\ Medium.ttf') format('ttf'),
+         url('./assets/fonts/futura/Futura\ Light.ttf') format('ttf'),
+         url('./assets/fonts/futura/Futura\ Extra\ Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -13,6 +13,9 @@ export default {
         "product6-bg": "url('/images/product-image6.png')",
         "subscribe-bg": "url('/images/subscribe-bg.png')",
       },
+      fontFamily: {
+        custom: ['futura', 'sans-serif'],
+      },
     },
   },
   plugins: [],
