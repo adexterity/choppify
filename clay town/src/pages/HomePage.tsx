@@ -26,7 +26,10 @@ const HomePage = () => {
             Discover handmade clay home decor items crafted by the finest
             artisans from around the world
           </h3>
-          <button className="bg-[#C4C0BD] p-3 rounded-full text-black " onClick={handleProceedToProduct}>
+          <button
+            className="bg-[#C4C0BD] p-3 rounded-full text-black "
+            onClick={handleProceedToProduct}
+          >
             Shop now <IoCartOutline className="inline" />
           </button>
         </div>
@@ -79,7 +82,7 @@ const HomePage = () => {
         </h2>
 
         <ul className="flex justify-around mb-20 flex-wrap">
-          <li className="p-2 bg-white rounded shadow-2xl">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className={`flex justify-between p-1`}>
                 <span></span>
@@ -106,137 +109,142 @@ const HomePage = () => {
               </div>
             </div>
           </li>
-          <li className="p-2 border border-[#00000088] rounded">
-            <div className="bg-product2-bg bg-no-repeat bg-bottom bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
+            <div className="bg-product2-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
               </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
+              <div>
+                <CiHeart />
+              </div>
             </div>
           </li>
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
               </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
+              <div>
+                <CiHeart />
+              </div>
             </div>
           </li>
         </ul>
 
         <ul className="flex justify-around flex-wrap">
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product4-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
               </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
+              <div>
+                <CiHeart />
+              </div>
             </div>
           </li>
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product5-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
-              <p className="font-medium text-xl  ">Abstract art</p>
-              <p>NGN 20,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
               </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
+              <div>
+                <CiHeart />
+              </div>
             </div>
           </li>
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product6-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
               </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
+              <div>
+                <CiHeart />
+              </div>
             </div>
           </li>
         </ul>
@@ -246,163 +254,90 @@ const HomePage = () => {
         <h2 className="text-center text-2xl md:text-[66px] py-[60px] md:py-[120px] font-semibold">
           Our Products
         </h2>
-        <ul className="flex justify-around mb-20 flex-wrap">
-          <li className="p-2 border border-black rounded">
-            <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
-              </div>
-            </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-              </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
-            </div>
-          </li>
-          <li className="p-2 border border-black rounded">
-            <div className="bg-product2-bg bg-no-repeat bg-bottom bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
-              </div>
-            </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-              </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
-            </div>
-          </li>
-          <li className="p-2 border border-black rounded">
-            <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="bg-white rounded-full p-2">Best seller</p>
-              </div>
-            </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-              </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
-            </div>
-          </li>
-        </ul>
+        
         <ul className="flex justify-around  mb-10 md:mb-20 flex-wrap">
-          <li className="p-2 border border-black rounded">
-            <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
-              </div>
-            </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-              </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
-            </div>
-          </li>
-          <li className="p-2 border border-black rounded">
-            <div className="bg-product2-bg bg-no-repeat bg-bottom bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
-              </div>
-            </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-              </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
-            </div>
-          </li>
-          <li className="p-2 border border-black rounded">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
-              <div className="flex justify-between p-1">
-                <span>
-                  <CiHeart />
-                </span>
-                <p className="border border-black rounded-full p-2">
-                  Best seller
-                </p>
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
               </div>
             </div>
-            <div>
-              <p className="font-medium text-xl  ">Still life pottery</p>
-              <p>NGN 15,000</p>
-              <div className="py-3">
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
-                <i className="fa-solid fa-star text-[#FFAE34]"></i>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
               </div>
-              <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
-                Add to cart
-              </button>
+              <div>
+                <CiHeart />
+              </div>
             </div>
           </li>
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
+            <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
+              </div>
+            </div>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
+              </div>
+              <div>
+                <CiHeart />
+              </div>
+            </div>
+          </li>
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
+            <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
+              <div className={`flex justify-between p-1`}>
+                <span></span>
+                <p className="bg-[#ffffff93] rounded-full p-2">Best seller</p>
+              </div>
+            </div>
+            <div className="flex justify-between pt-4">
+              <div>
+                <p className="font-medium text-xl  ">Still life pottery</p>
+                <p>NGN 15,000</p>
+                <div className="py-3">
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                  <i className="fa-solid fa-star text-[#FFAE34]"></i>
+                </div>
+                <button className="bg-[#E2D3B3] p-3 rounded-full border border-[#1c1c1c48]">
+                  Add to cart
+                </button>
+              </div>
+              <div>
+                <CiHeart />
+              </div>
+            </div>
+          </li>
+
         </ul>
         <p className="text-[#FF7810] text-right pr-4 text-3xl md:text-5xl pb-5 md:pb-9">
           see more

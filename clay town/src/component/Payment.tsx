@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const Payment = () => {
 
-  
+  const navigate = useNavigate();
+
+  const handleProceedToHome = () => {
+    navigate("/");
+  };
   return (
     <div className="bg-white mx-5 rounded-xl min-h-[500px] mb-5 px-5 pt-5 ">
       <h2 className="my-6">Payment method</h2>
@@ -40,7 +46,7 @@ const Payment = () => {
           <span className="text-2xl mr-3">+</span> <span>Add New Address</span>
         </div>
 
-        <div className="m-auto flex justify-center ">
+        <div className="m-auto flex justify-center"   onClick={handleProceedToHome}>
           <button
             className="my-4 bg-[#DFAE72] rounded-full 
          py-2 px-6  text-white"

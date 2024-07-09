@@ -3,7 +3,7 @@ import { FaRegUser } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { IoMenu, IoSearchSharp } from "react-icons/io5";
 import { TiShoppingCart } from "react-icons/ti";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showNavLinks, setshowNavLinks] = useState(false);
@@ -13,6 +13,11 @@ const Navbar = () => {
      */ setshowNavLinks(false);
   };
 
+  const navigate = useNavigate();
+
+  const handleProceedToHome = () => {
+    navigate("/");
+  };
   return (
     <nav className="absolute top-1 left-0  flex justify-between  min-w-full px-10 py-5 items-center">
       <div
@@ -24,7 +29,7 @@ const Navbar = () => {
       >
         {showNavLinks ? <IoMdClose size={30} /> : <IoMenu size={30} />}
       </div>
-      <h2>
+      <h2 onClick={handleProceedToHome}>
         <img src="/images/Logo.svg" alt="logo" className=" w-24 md:w-40" />
       </h2>
 
