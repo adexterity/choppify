@@ -360,8 +360,7 @@ const HomePage = () => {
         </button>
       </section>
 
-      {/* footer */}
-      <Footer />
+     
     </>
   );
 };

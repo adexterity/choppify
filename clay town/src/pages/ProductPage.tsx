@@ -1,11 +1,9 @@
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
+
 import { CiHeart } from "react-icons/ci";
 
 const ProductPage = () => {
   return (
     <>
-      <Navbar />
       <section className="pt-36 pb-5 bg-[#DED5BC] min-h-screen">
         <h2 className="text-center font-semibold text-4xl pb-10">categories</h2>
         <ul className="flex justify-center gap-5 md:gap-20 md:text-3xl font-semibold ">
@@ -520,7 +518,6 @@ const ProductPage = () => {
           <img src="/images/pagination.svg" alt="pagination" />
         </div>
       </section>
-      <Footer />
     </>
   );
 };
