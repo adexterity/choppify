@@ -1,20 +1,44 @@
-
+import { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
+import { getJewelery } from "../utils/utils";
+import {  NavLink, Outlet } from "react-router-dom";
 
 const ProductPage = () => {
+  const [jeweleryProduct, setJeweleryProduct] = useState([]);
+
+  useEffect(() => {
+    async function getAllJewelery() {
+      const getJeweleryCategory = await getJewelery();
+      console.log(getJeweleryCategory, "getJeweleryCategory: productPage");
+
+      setJeweleryProduct(getJeweleryCategory);
+    }
+    getAllJewelery();
+  }, []);
+
+  console.log(jeweleryProduct, "jeweleryProduct: productPage");
   return (
     <>
       <section className="pt-36 pb-5 bg-[#DED5BC] min-h-screen">
         <h2 className="text-center font-semibold text-4xl pb-10">categories</h2>
         <ul className="flex justify-center gap-5 md:gap-20 md:text-3xl font-semibold ">
-          <li>All</li>
-          <li>Decorative</li>
-          <li>Kitchenware</li>
-          <li>TableWare</li>
+          <NavLink to='allProduct'>
+            <li>All</li>
+          </NavLink>
+          <NavLink  to='electronics'>
+            <li>Electronics</li>
+          </NavLink>
+          <NavLink  to='mens'>
+            <li>Men's Wear</li>
+          </NavLink>
+          <NavLink  to='womens'>
+            <li>Women's Wear</li>
+          </NavLink>
         </ul>
         <div className=" w-[60%] h-3 bg-black m-auto my-4 mb-10">
           <div className="bg-yellow-500 h-3 w-[15%] border border-t-4 border-black"></div>
         </div>
+        <Outlet />
         <ul className="flex justify-around mb-20 flex-wrap">
           <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product2-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
@@ -99,7 +123,7 @@ const ProductPage = () => {
           </li>
         </ul>
         <ul className="flex justify-around mb-20 flex-wrap">
-        <li className="p-2 bg-white rounded shadow-2xl mb-5">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product4-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className={`flex justify-between p-1`}>
                 <span></span>
@@ -182,7 +206,7 @@ const ProductPage = () => {
           </li>
         </ul>
         <ul className="flex justify-around mb-20 flex-wrap">
-        <li className="p-2 bg-white rounded shadow-2xl mb-5">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product2-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className={`flex justify-between p-1`}>
                 <span></span>
@@ -265,7 +289,7 @@ const ProductPage = () => {
           </li>
         </ul>
         <ul className="flex justify-around mb-20 flex-wrap">
-        <li className="p-2 bg-white rounded shadow-2xl mb-5">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product1-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className={`flex justify-between p-1`}>
                 <span></span>
@@ -348,7 +372,7 @@ const ProductPage = () => {
           </li>
         </ul>
         <ul className="flex justify-around mb-20 flex-wrap">
-        <li className="p-2 bg-white rounded shadow-2xl mb-5">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className={`flex justify-between p-1`}>
                 <span></span>
@@ -431,7 +455,7 @@ const ProductPage = () => {
           </li>
         </ul>
         <ul className="flex justify-around mb-20 flex-wrap">
-        <li className="p-2 bg-white rounded shadow-2xl mb-5">
+          <li className="p-2 bg-white rounded shadow-2xl mb-5">
             <div className="bg-product3-bg bg-no-repeat bg-center bg-cover w-[300px] h-[300px] ">
               <div className={`flex justify-between p-1`}>
                 <span></span>
