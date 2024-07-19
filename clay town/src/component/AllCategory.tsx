@@ -10,8 +10,8 @@ const AllCategory = () => {
       const allItemsCategory = await getAllCategory();
 
     setAllProductCategory(allItemsCategory);
-      console.log(allItemsCategory, "allItemsCategory: AllCategory");
-    }
+/*       console.log(allItemsCategory, "allItemsCategory: AllCategory");
+ */    }
     getAllItemsCategory();
   }, []);
   return (

@@ -9,15 +9,15 @@ const ProductPage = () => {
   useEffect(() => {
     async function getAllJewelery() {
       const getJeweleryCategory = await getJewelery();
-      console.log(getJeweleryCategory, "getJeweleryCategory: productPage");
-
+/*       console.log(getJeweleryCategory, "getJeweleryCategory: productPage");
+ */
       setJeweleryProduct(getJeweleryCategory);
     }
     getAllJewelery();
   }, []);
 
-  console.log(jeweleryProduct, "jeweleryProduct: productPage");
-  return (
+/*   console.log(jeweleryProduct, "jeweleryProduct: productPage");
+ */  return (
     <>
       <section className="pt-36 pb-5 bg-[#DED5BC] min-h-screen">
         <h2 className="text-center font-semibold text-4xl pb-10">categories</h2>

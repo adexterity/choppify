@@ -8,8 +8,8 @@ export const getProducts = async () => {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    console.log(data, "products: utils");
-    return data;
+/*     console.log(data, "products: utils");
+ */    return data;
   } catch (e) {
     console.log("failed to fetch data:", e);
     if (e.message === "Request timed out") {
@@ -27,8 +27,8 @@ export const getAllCategory = async () => {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    console.log(data, "allCategory: utils");
-    return data;
+/*     console.log(data, "allCategory: utils");
+ */    return data;
   } catch (e) {
     console.log("failed to fetch data:", e);
     if (e.message === "Request timed out") {
@@ -48,8 +48,8 @@ export const getJewelery = async () => {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    console.log(data, "products: utils");
-    return data;
+/*     console.log(data, "products: utils");
+ */    return data;
   } catch (e) {
     console.log("failed to fetch data:", e);
     if (e.message === "Request timed out") {
@@ -67,8 +67,8 @@ export const getElectronics = async () => {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    console.log(data, "products: utils");
-    return data;
+/*     console.log(data, "products: utils");
+ */    return data;
   } catch (e) {
     console.log("failed to fetch data:", e);
     if (e.message === "Request timed out") {
@@ -86,8 +86,8 @@ export const getMensClothing = async () => {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    console.log(data, "products: utils");
-    return data;
+/*     console.log(data, "products: utils");
+ */    return data;
   } catch (e) {
     console.log("failed to fetch data:", e);
     if (e.message === "Request timed out") {
@@ -105,8 +105,8 @@ export const getWomensClothing = async () => {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    console.log(data, "products: utils");
-    return data;
+/*     console.log(data, "products: utils");
+ */    return data;
   } catch (e) {
     console.log("failed to fetch data:", e);
     if (e.message === "Request timed out") {

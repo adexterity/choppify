@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { clearCart } from "../state/counter/counterSlice";
 
-import { formatCurrency } from "../utils/utils";
 import CartSummaryTable from "./CartSummaryTable";
 
 const CartPage = () => {
@@ -49,6 +48,12 @@ const CartPage = () => {
         <h2 className="font-semibold text-2xl">Cart Summary</h2>
 
         <CartSummaryTable cart={cart} />
+
+        <Link to="/checkout">
+          <button className="border bg-[#FCF2E1] rounded-full px-5 py-3">
+            Checkout
+          </button>
+        </Link>
       </div>
       <button
         className="text-[#FF7810] absolute bottom-4 right-4

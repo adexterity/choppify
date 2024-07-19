@@ -13,10 +13,8 @@ const CartItem = ({ item }) => {
 
   const itemCount = cart.find((count) => count.id === item.id);
 
-  console.log(itemCount?.cartCount, "itemCount: cartItem");
   const dispatch = useDispatch();
 
-  console.log(item, "cartItem");
 
   return (
     <>

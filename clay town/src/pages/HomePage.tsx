@@ -20,8 +20,8 @@ const HomePage = () => {
     getAllProducts();
   }, []);
 
-  console.log(allProducts, "homepage");
-
+/*   console.log(allProducts, "homepage");
+ */
   const handleProceedToProduct = () => {
     navigate("/product");
   };
