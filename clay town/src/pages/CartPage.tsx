@@ -5,13 +5,15 @@ import { RootState } from "../state/store";
 import { useDispatch, useSelector } from "react-redux";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { clearCart } from "../state/counter/counterSlice";
+
 import { formatCurrency } from "../utils/utils";
+import CartSummaryTable from "./CartSummaryTable";
 
 const CartPage = () => {
   const cart = useSelector((state: RootState) => state.counter.cart);
-  const totalPrice = useSelector((state: RootState) => state.counter.totalPrice);
-
-  
+  const totalPrice = useSelector(
+    (state: RootState) => state.counter.totalPrice
+  );
 
   const dispatch = useDispatch();
 
@@ -46,57 +48,7 @@ const CartPage = () => {
       <div className="bg-[#FCF9F1] mt-8 rounded-lg max-w-[600px] px-5 pt-3 pb-5">
         <h2 className="font-semibold text-2xl">Cart Summary</h2>
 
-        {
-          
-          <table>
-            <thead >
-              <tr>
-                <td className="py-2 px-5 font-semibold hidden md:inline">
-                  Item Name
-                </td>
-                <td className="py-2 px-5 font-semibold hidden md:inline">
-                  Quantity
-                </td>
-                <td className="py-2 px-5 font-semibold text-center">Cost</td>
-              </tr>
-
-              </thead>
-              
-            <tbody>
-
-            {
-                cart.map((item, index)=>(
-                  
-                  <tr  key={index}>
-                  <td className="py-2 px-5 hidden md:inline">{item.title}</td>
-                  <td className="py-2 px-5 hidden md:inline">{item.cartCount}</td>
-                  <td className="py-2 px-5 text-right">{item.itemTotalPrice}</td>
-                </tr>
-                ))
-              }
-             
-           
-           
-             
-              <tr>
-                <td className="py-2 px-5 hidden md:inline"></td>
-                <td className="py-2 px-5 hidden md:inline"></td>
-                <td className="py-2 px-5 text-right">Total-{formatCurrency(totalPrice)}</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-5 hidden md:inline"></td>
-                <td className="py-2 px-5 hidden md:inline"></td>
-                <td className="py-2 px-5 text-right">
-                  <Link to="/checkout">
-                    <button className="border bg-[#FCF2E1] rounded-full px-5 py-3">
-                      Checkout
-                    </button>
-                  </Link>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        }
+        <CartSummaryTable cart={cart} />
       </div>
       <button
         className="text-[#FF7810] absolute bottom-4 right-4
